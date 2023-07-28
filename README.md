@@ -8,6 +8,11 @@ Database: MongoDB
 Framework: Express
 ```
 
+## Prerequisite
+Make sure you have installed these software before running the program:
+- [Download | Node.js (nodejs.org)](https://nodejs.org/en/download)
+- [Download MongoDB Community Server | MongoDB - https://www.mongodb.com/try/download/community](https://www.mongodb.com/try/download/community)
+
 ## Installation
 
 ```
