@@ -54,7 +54,7 @@ export default class CommentRouter {
       }
     })
 
-    // Update product
+    // Update comments
     this.router.patch('/:id', async (req, res) => {
       try {
         const commentID = req.params.id;
@@ -72,7 +72,7 @@ export default class CommentRouter {
       } 
     })
 
-    // Delete product
+    // Delete comments
     this.router.delete('/:id', async (req, res) => {
       try {
         const productID = req.params.id;
