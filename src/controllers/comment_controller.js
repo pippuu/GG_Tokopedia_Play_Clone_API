@@ -5,7 +5,6 @@ export default class CommentController {
 
   // Create comment
   async createComment(username, comment, videoID) {
-      console.log("test");
       return await this.commentService.createComment(username, comment, videoID);
   }
 

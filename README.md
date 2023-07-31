@@ -8,6 +8,12 @@ Database: MongoDB
 Framework: Express
 ```
 
+## Prerequisite
+Make sure you have installed these software before running the program:
+- [Download | Node.js (nodejs.org)](https://nodejs.org/en/download)
+- [Download MongoDB Community Server | MongoDB - https://www.mongodb.com/try/download/community](https://www.mongodb.com/try/download/community)
+
+
 ## Installation
 
 ```
@@ -16,7 +22,7 @@ git clone
 
 // Install the dependencies
 cd midterm_assignment
-npm install midterm_assignment
+npm install 
 
 ps: don't forget to create your own .env file by copying from the .env_example
 ```
@@ -78,10 +84,10 @@ Response: {
 | videoID | ObjectID | reference to the according video |
 
 #### API Structure
-Get Product List
+Get Product List by VideoID
 ```
 Method: GET
-URL: http://localhost:8080/api/product
+URL: http://localhost:8080/api/product/video/:id
 Response: {
     "statusCode": 200,
     "success": true,
@@ -131,10 +137,10 @@ Response: {
 }
 ```
 
-- Get Comment List
+- Get Comment List by VideoID
 ```
 Method: GET
-URL: http://localhost:8080/api/comment
+URL: http://localhost:8080/api/comment/video/:id
 Response: {
     "statusCode": 200,
     "success": true,
@@ -157,6 +163,15 @@ Response: {
             "updatedAt": "2023-07-28T03:32:43.406Z",
             "__v": 0
         },
+        {
+            "_id": "64c337ef6027f15df9c377d3",
+            "username": "dummy",
+            "comment": "macing mantap",
+            "videoID": "64c312b30fadf50229584124",
+            "createdAt": "2023-07-28T03:37:19.718Z",
+            "updatedAt": "2023-07-28T03:37:19.718Z",
+            "__v": 0
+        }
     ]
 }
 ```

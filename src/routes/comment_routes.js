@@ -47,7 +47,7 @@ export default class CommentRouter {
     this.router.get('/video/:id', async (req, res) => {
       try {
         const videoID = req.params.id;
-        const comments = await this.productController.getCommentsByVideoID(videoID);
+        const comments = await this.commentController.getCommentsByVideoID(videoID);
         sendSuccess(res, comments);
       } catch (error) {
         sendError(res, error);
